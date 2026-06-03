@@ -1,10 +1,58 @@
 import math
 
+""" DEV NOTE """
+""""
+add whole functions operations
+in other words flesh this out more so it is more impressive
+slope
+distance
+midpoint
+quadratic
+pythagorean
+sin
+cos
+tan
+secant
+cosecant
+cotangent
+degree <--> radian conversions
+shape area
+circumfrence
+shape volume
+mean
+median
+mode
+min
+max
+standard deviation
+compound interest
+kinetic energy
+ohms law
+unit conversions
+Percentage calculator
+Factorial
+Prime number checker
+Greatest common divisor
+Least common multiple
+Random number generator
+Temperature conversions
+Currency-style tip calculator
+BMI calculator
+Simple interest
+Loan payment calculator
+Vector magnitude
+Linear equation solver
+System of equations solver
+Logarithms
+Natural log
+Graphing functions later with matplotlib
+"""
+
 def menu():
     print()
     print("Addition: 1")
     print("Subtraction: 2")
-    print("Mutiplication: 3")
+    print("Multiplication: 3")
     print("Division: 4")
     print("Exponent: 5")
     print("Modulus: 6")
@@ -54,8 +102,11 @@ while True:
     elif selection == "6":
         num1 = float(input("What is the first number: "))
         num2 = float(input("What is the second number: "))
-        total = num1 % num2
-        print("The remainder of", num1, "/", num2, "is", total)
+        if num2 == 0:
+            print("Error: division by zero")
+        else:
+            total = num1 % num2
+            print("The remainder of", num1, "/", num2, "is", total)
     elif selection == "7":
         num1 = float(input("What is the first number: "))
         num2 = float(input("What is the second number: "))
@@ -63,11 +114,16 @@ while True:
             print("Error: division by zero")
         else:
             total = num1 // num2
-            print("The largest whole number of", num1, "-", num2, "is", total)
+            print(num1, "floor divided by", num2, "is", total)
     elif selection == "8":
         num1 = float(input("What is the number: "))
-        total = math.sqrt(num1)
-        print("The square root of", num1, "is", total)
+        if num1 < 0:
+            num = abs(num1)
+            total = math.sqrt(num)
+            print("The square root of", num1, "is", str(total) + "i")
+        else:
+            total = math.sqrt(num1)
+            print("The square root of", num1, "is", total)
     elif selection == "9":
         num1 = float(input("What is the number: "))
         total = abs(num1)
