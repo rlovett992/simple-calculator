@@ -72,3 +72,5 @@ while True:
         num1 = float(input("What is the number: "))
         total = abs(num1)
         print(total)
+    else:
+        print("You must pick a valid option from the list")
