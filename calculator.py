@@ -2,7 +2,7 @@ import math
 from menus import *
 from menu_hadler import *
 
-print("Simple Calculator")
+print("Calculator Project")
 
 while True:
     main_menu()
