@@ -2,8 +2,6 @@ import math
 
 """ DEV NOTE """
 """"
-add whole functions operations
-in other words flesh this out more so it is more impressive
 slope
 distance
 midpoint
