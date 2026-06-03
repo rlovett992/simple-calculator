@@ -27,17 +27,17 @@ while True:
         num1 = float(input("What is the first number: "))
         num2 = float(input("What is the second number: "))
         total = num1 + num2
-        print(total)
+        print("The total of", num1, "+", num2, "is", total)
     elif selection == "2":
         num1 = float(input("What is the first number: "))
         num2 = float(input("What is the second number: "))
         total = num1 - num2
-        print(total)
+        print("The total of", num1, "-", num2, "is", total)
     elif selection == "3":
         num1 = float(input("What is the first number: "))
         num2 = float(input("What is the second number: "))
         total = num1 * num2
-        print(total)
+        print("The total of", num1, "*", num2, "is", total)
     elif selection == "4":
         num1 = float(input("What is the first number: "))
         num2 = float(input("What is the second number: "))
@@ -45,17 +45,17 @@ while True:
             print("Error: division by zero")
         else:
             total = num1 / num2
-            print(total)
+            print("The total of", num1, "/", num2, "is", total)
     elif selection == "5":
         num1 = float(input("What is the first number: "))
         num2 = float(input("What is the second number: "))
         total = num1 ** num2
-        print(total)
+        print("The total of", num1, "raised to the", num2, "power is", total)
     elif selection == "6":
         num1 = float(input("What is the first number: "))
         num2 = float(input("What is the second number: "))
         total = num1 % num2
-        print(total)
+        print("The remainder of", num1, "/", num2, "is", total)
     elif selection == "7":
         num1 = float(input("What is the first number: "))
         num2 = float(input("What is the second number: "))
@@ -63,14 +63,14 @@ while True:
             print("Error: division by zero")
         else:
             total = num1 // num2
-            print(total)
+            print("The largest whole number of", num1, "-", num2, "is", total)
     elif selection == "8":
         num1 = float(input("What is the number: "))
         total = math.sqrt(num1)
-        print(total)
+        print("The square root of", num1, "is", total)
     elif selection == "9":
         num1 = float(input("What is the number: "))
         total = abs(num1)
-        print(total)
+        print("The absolute value of", num1, "is", total)
     else:
         print("You must pick a valid option from the list")
