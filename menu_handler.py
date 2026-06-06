@@ -1,4 +1,5 @@
 from menus import *
+import math
 
 #remove this at the end
 def not_added():
@@ -39,8 +40,31 @@ def handle_algebra_menu():
 
         if selection == "0":
             break
-        elif selection in ["1", "2", "3", "4", "5"]:
-            not_added()
+        elif selection == "1":
+            x1 = float(input("What is the first x: "))
+            x2 = float(input("What is the second x: "))
+            y1 = float(input("What is the first y: "))
+            y2 = float(input("What is the second y: "))
+            total = (y2 - y1) / (x2 - x1)
+            print("The slope of the line is", total)
+        elif selection == "2":
+            a = float(input("What is the coefficient of x^2: "))
+            b = float(input("What is the coefficient of x: "))
+            c = float(input("What is the constant term: "))
+            discriminant = b**2 - 4*a*c
+            if discriminant > 0:
+                root1 = (-b + math.sqrt(discriminant)) / (2*a)
+                root2 = (-b - math.sqrt(discriminant)) / (2*a)
+                print("The roots are", root1, "and", root2)
+            elif discriminant == 0:
+                root = -b / (2*a)
+                print("The root is", root)
+            else:
+                real_part = -b / (2*a)
+                imaginary_part = math.sqrt(-discriminant) / (2*a)
+                print("The roots are", str(real_part) + " + " + str(imaginary_part) + "i", "and", str(real_part) + " - " + str(imaginary_part) + "i")
+        elif selection == "3":
+            print("This function has not been added yet.")
         else:
             print("You must pick a valid option from the list")
 

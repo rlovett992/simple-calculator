@@ -1,6 +1,6 @@
 import math
 from menus import *
-from menu_hadler import *
+from menu_handler import *
 
 print("Calculator Project")
 
